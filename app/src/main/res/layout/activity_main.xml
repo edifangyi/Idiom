@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fae8be"
+    android:orientation="vertical"
+    tools:context="com.Idiom.ui.MainActivity">
+
+    <include layout="@layout/layout_toolbar_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.Idiom.widget.MultiShapeView
+                    android:id="@+id/iv_circle"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:shape="circle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="远走高飞" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginTop="30dp"
+                android:text="         成语是我国汉字语言词汇中一部分定型的词组或短句，一般有固定的结构形式和固定的说法，表示一定的意义，在语句中是作为一个整体来应用的。成语有很大一部分是从古代相承沿用下来的，在用词方面往往不同于现代汉语，它代表了一个故事或者典故。成语又是一种现成的话，跟习用语、谚语相近，但是也略有区别。成语大多出自书面，属于文语性质的。"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_play_game"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_main_button"
+                android:text="开始消成语"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
